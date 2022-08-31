@@ -11,7 +11,8 @@
 
         <style>
             :root {
-                --color-1st: {{ theme_option('primary_color', '#bead8e') }};
+                {{----color-1st: {{ theme_option('primary_color', '#bead8e') }};--}}
+                --color-1st: {{ theme_option('primary_color', '#0000FF') }};
                 --primary-font: '{{ theme_option('primary_font', 'Archivo') }}', sans-serif;
                 --secondary-font: '{{ theme_option('secondary_font', 'Old Standard TT') }}', sans-serif;
                 --tertiary-font: '{{ theme_option('tertiary_font', 'Roboto') }}', sans-serif;
@@ -22,7 +23,7 @@
     </head>
     <body @if (BaseHelper::siteLanguageDirection() == 'rtl') dir="rtl" @endif>
     <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<!--    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>-->
     <![endif]-->
 
     @if (theme_option('preloader_enabled', 'no') == 'yes')
@@ -34,11 +35,11 @@
         </div>
     @endif
 <!--====== HEADER START ======-->
-<header class="header-absolute sticky-header @if (url()->current() == url('')) header-two @else inner-page @endif">
-    <div class="container container-custom-one">
+<header class="header-absolute sticky-header @if (url()->current() == url('')) header-two @else inner-page @endif" style="background-color: #0000FF !important;color: white">
+    <div class="container container-custom-one" style="background-color: #0000FF !important;color: white">
         <div class="nav-container d-flex align-items-center justify-content-between breakpoint-on">
             <!-- Main Menu -->
-            <div class="nav-menu d-lg-flex align-items-center">
+            <div class="nav-menu d-lg-flex align-items-center" style="background-color: #0000FF !important;color: white">
 
                 <!-- Navbar Close Icon -->
                 <div class="navbar-close">
@@ -50,7 +51,7 @@
                     <a href="#" id="offCanvasBtn"><i class="fal fa-bars"></i></a>
                 </div>
                 <!-- Menu Items -->
-                <div class="menu-items">
+                <div class="menu-items" style="background-color: #0000FF !important;color: white">
                     {!! Menu::renderMenuLocation('header-menu', ['view' => 'menu']) !!}
                 </div>
 

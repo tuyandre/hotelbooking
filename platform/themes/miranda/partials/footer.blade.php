@@ -3,7 +3,7 @@
             <i class="fal fa-angle-double-up"></i>
         </a>
         <!--====== FOOTER START ======-->
-        <footer class="footer-two">
+        <footer class="footer-two" >
             <div class="footer-widget-area pt-100 pb-50">
                 <div class="container">
                     <div class="row">
